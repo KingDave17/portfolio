@@ -1,0 +1,589 @@
+/* TuraFlow Exact Styling Match */
+
+.tura-app {
+  background: #F9FAFB;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #111827;
+}
+
+.tura-scroll-area {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 20px;
+}
+.tura-scroll-area::-webkit-scrollbar {
+  display: none;
+}
+
+/* Header */
+.tura-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+}
+
+.tura-header-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.tura-profile-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #008751;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.tura-location-container {
+  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tura-loc-label {
+  font-size: 11px;
+  color: #6B7280;
+  font-weight: 500;
+}
+
+.tura-loc-header {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: bold;
+  color: #111827;
+  margin-top: 2px;
+}
+
+.tura-bell {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: white;
+  border: 1px solid #E5E7EB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.tura-red-dot {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 7px;
+  height: 7px;
+  background-color: #EF4444;
+  border-radius: 50%;
+}
+
+/* Search */
+.tura-search {
+  display: flex;
+  align-items: center;
+  background: #F3F4F6;
+  padding: 10px 12px;
+  margin: 0 20px 20px;
+  border-radius: 12px;
+}
+.tura-search input {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  outline: none;
+  color: #111827;
+  margin-left: 8px;
+  width: 100%;
+}
+
+/* Stories */
+.tura-stories {
+  display: flex;
+  overflow-x: auto;
+  padding: 0 15px 20px;
+  gap: 12px;
+}
+.tura-stories::-webkit-scrollbar { display: none; }
+
+.tura-story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 65px;
+}
+
+.tura-story-ring {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  border: 2px solid #008751;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tura-story-ring img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.tura-story span {
+  font-size: 11px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+/* Titles */
+.tura-section-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 20px 10px;
+}
+
+/* Essentials */
+.tura-essentials {
+  display: flex;
+  padding: 0 20px 20px;
+  gap: 15px;
+  overflow-x: auto;
+}
+.tura-essentials::-webkit-scrollbar { display: none; }
+
+.tura-essential {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 10px 14px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tura-e-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+}
+.tura-essential span {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Categories */
+.tura-categories {
+  display: flex;
+  padding: 0 20px 20px;
+  gap: 10px;
+  overflow-x: auto;
+}
+.tura-categories::-webkit-scrollbar { display: none; }
+
+.tura-cat-pill {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 1px solid #E5E7EB;
+  background: white;
+  font-size: 12px;
+  font-weight: 600;
+  color: #111827;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.tura-cat-pill.active {
+  background: #008751;
+  color: white;
+  border-color: #008751;
+}
+
+/* Places */
+.tura-places {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tura-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+.tura-card-img-wrap {
+  position: relative;
+  height: 160px;
+}
+
+.tura-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tura-card-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.tura-heart-icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tura-card-content {
+  padding: 15px;
+}
+
+.tura-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.tura-card-title {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.tura-rating {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.tura-location-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: #6B7280;
+  margin-bottom: 12px;
+}
+
+.tura-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tura-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #008751;
+}
+
+.tura-btn-row {
+  display: flex;
+  gap: 6px;
+}
+
+.tura-icon-btn {
+  background: #F3F4F6;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tura-book-btn {
+  background: #008751;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0 14px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Bottom Nav */
+.tura-bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+  border-top: 1px solid #F3F4F6;
+  padding: 10px 0 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.tura-nav-btn {
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: #6B7280;
+  cursor: pointer;
+}
+
+.tura-nav-btn span {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+/* Modals / Overlays */
+.tura-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+  border-radius: 32px;
+}
+
+.tura-modal {
+  background: white;
+  width: 85%;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tura-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.tura-modal-header h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.tura-modal-header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6B7280;
+}
+
+.tura-notif-item {
+  border-bottom: 1px solid #E5E7EB;
+  padding: 10px 0;
+}
+.tura-notif-item:last-child {
+  border: none;
+}
+.tura-notif-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+.tura-notif-top span { color: #6B7280; font-size: 11px; }
+.tura-notif-item p { color: #6B7280; font-size: 12px; }
+
+.tura-e-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #E5E7EB;
+  cursor: pointer;
+}
+.tura-e-row:last-child { border: none; }
+.tura-e-row-left {
+  display: flex;
+  flex-direction: column;
+}
+.tura-e-row-left strong { font-size: 14px; color: #111827; }
+.tura-e-row-left span { font-size: 11px; color: #6B7280; }
+
+.tura-icon-huge {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 15px;
+}
+
+/* Tab Screens (Saved & Profile) */
+.tura-header-border {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #E5E7EB;
+  background: white;
+}
+
+.tura-saved-card {
+  display: flex;
+  background: white;
+  border-radius: 16px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+}
+
+.tura-saved-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.tura-saved-info {
+  flex: 1;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tura-settings-label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #6B7280;
+  margin-bottom: 8px;
+  display: block;
+  margin-left: 10px;
+}
+
+.tura-settings-card {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #E5E7EB;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.tura-settings-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.tura-settings-row:last-child {
+  border-bottom: none;
+}
+
+.tura-toggle {
+  width: 50px;
+  height: 30px;
+  border-radius: 15px;
+  background: #E5E7EB;
+  position: relative;
+  transition: 0.3s;
+}
+
+.tura-toggle.active {
+  background: #008751;
+}
+
+.tura-toggle-thumb {
+  width: 26px;
+  height: 26px;
+  border-radius: 13px;
+  background: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: 0.3s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.tura-toggle.active .tura-toggle-thumb {
+  transform: translateX(20px);
+}
+
+/* Splash and Welcome Overrides */
+.splash-screen {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.welcome-screen {
+  flex: 1;
+  position: relative;
+}
+
+.welcome-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.welcome-bg .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8));
+}
+
+.welcome-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30px 20px 40px;
+  text-align: left;
+}
