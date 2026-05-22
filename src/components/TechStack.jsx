@@ -29,14 +29,7 @@ const icons = {
       <text x="12" y="15" fill="white" fontSize="12" fontWeight="900" fontFamily="Arial, sans-serif" textAnchor="middle">3</text>
     </svg>
   ),
-  reactNative: (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#61DAFB" strokeWidth="1.2">
-      <circle cx="12" cy="12" r="2.5" fill="#61DAFB"/>
-      <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(30, 12, 12)"/>
-      <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(90, 12, 12)"/>
-      <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(150, 12, 12)"/>
-    </svg>
-  ),
+  
   firebase: (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="#FFCA28">
       <path d="M3.89 15.672L6.255.485C6.302.181 6.556 0 6.84 0c.284 0 .538.181.585.485l1.65 10.635 2.126-3.955c.08-.148.232-.24.402-.24.17 0 .322.092.402.24l8.604 15.96a.584.584 0 01-.219.805c-.085.05-.183.075-.283.075-.1 0-.2-.025-.284-.075L3.89 15.672z" fill="#FFA000"/>
@@ -51,15 +44,11 @@ const TechStack = () => {
     {
       title: 'FRONTEND',
       skills: [
-        { name: 'JavaScript', icon: icons.javascript },
         { name: 'React', icon: icons.react },
+        { name: 'JavaScript', icon: icons.javascript },
         { name: 'HTML', icon: icons.html },
         { name: 'CSS', icon: icons.css },
       ],
-    },
-    {
-      title: 'MOBILE',
-      skills: [{ name: 'React Native', icon: icons.reactNative }],
     },
     {
       title: 'BACKEND & SERVICES',
@@ -72,7 +61,6 @@ const TechStack = () => {
       <div className="container">
         <div className="tech-header">
           <h2 className="section-title" style={{ marginBottom: 0 }}>Tech Stack</h2>
-          <span className="tech-scroll-hint">(Scroll Along)</span>
         </div>
         
         {categories.map((cat) => (

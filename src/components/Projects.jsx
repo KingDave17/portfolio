@@ -1,6 +1,4 @@
-import React, { useState } from 'react';
-import { X } from 'lucide-react';
-import TuraFlow from './TuraFlow';
+import React from 'react';
 
 const ArrowUpRight = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -8,36 +6,37 @@ const ArrowUpRight = () => (
   </svg>
 );
 
-const PlayIcon = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <polygon points="5 3 19 12 5 21 5 3"/>
-  </svg>
-);
-
 const projects = [
   {
-    id: 3,
-    title: 'Warm Bliss Hotel',
-    tag: 'HOSPITALITY',
+    id: 1,
+    title: 'Quill AI Assistant',
+    tag: 'AI / TOOLS',
     type: 'web',
-    description: 'Bespoke full-stack hotel management prototype with custom modular auth, Jasmine unit testing, and payment portal logic.',
-    image: '/host-management.png',
-    demo: 'https://warm-bliss-hotel-react.vercel.app/',
+    description: 'An AI-powered writing assistant built with React and the Hugging Face API. Features robust error handling, fully accessible UI, responsive CSS, and persistent draft history using localStorage.',
+    image: '/quill.png',
+    demo: 'https://quill-assistant.vercel.app/',
   },
   {
     id: 2,
-    title: 'TouringApp',
-    tag: 'TRAVEL',
-    type: 'mobile',
-    description: 'Comprehensive mobile travel companion designed with React Native, integrated location services, and biometric authentication.',
-    image: '/touring-app.png',
-    demo: '#tura-demo',
+    title: 'Burger Thief',
+    tag: 'GAME',
+    type: 'web',
+    description: 'A fun and interactive React web application focusing on complex state management, engaging user interfaces, and dynamic rendering.',
+    image: '/burger.png',
+    demo: 'https://burger-thief.vercel.app/', 
   },
+  {
+    id: 3,
+    title: 'Warm Bliss Hotel',
+    tag: 'FULL-STACK',
+    type: 'web',
+    description: 'Full-stack hotel management prototype with custom modular auth, Jasmine unit testing, and payment portal logic.',
+    image: '/hotel.png',
+    demo: 'https://warm-bliss-hotel-react.vercel.app/',
+  }
 ];
 
 const Projects = () => {
-  const [isTuraOpen, setIsTuraOpen] = useState(false);
-
   return (
     <section className="section projects-section" id="projects">
       <div className="container">
@@ -58,43 +57,21 @@ const Projects = () => {
                 </div>
                 <p className="project-desc">{p.description}</p>
                 <div className="project-links">
-                  {p.title === 'TouringApp' ? (
-                    <button 
-                      onClick={() => setIsTuraOpen(true)} 
-                      className="project-link-icon" 
-                      title="Watch Interactive Demo"
-                      style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
-                    >
-                      <PlayIcon />
-                    </button>
-                  ) : (
-                    <a 
-                      href={p.demo} 
-                      className="project-link-icon" 
-                      title={p.type === 'web' ? 'Live Demo' : 'Watch Video Demo'}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {p.type === 'web' ? <ArrowUpRight /> : <PlayIcon />}
-                    </a>
-                  )}
+                  <a 
+                    href={p.demo} 
+                    className="btn-ghost" 
+                    style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem 1.2rem', fontSize: '0.8rem' }}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Live Demo <ArrowUpRight />
+                  </a>
                 </div>
               </div>
             </div>
           ))}
         </div>
       </div>
-
-      {isTuraOpen && (
-        <div className="modal-overlay" onClick={() => setIsTuraOpen(false)}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="modal-close-btn" onClick={() => setIsTuraOpen(false)}>
-              <X size={20} />
-            </button>
-            <TuraFlow />
-          </div>
-        </div>
-      )}
     </section>
   );
 };

@@ -12,10 +12,7 @@ const Education = () => (
             <span className="edu-year">(Expected July 2026)</span>
           </p>
           <p className="edu-school">Babcock University</p>
-          <p className="edu-desc">
-            Specialising in full-stack development, mobile application architectures, and scalable UI design. Currently
-            exploring cloud infrastructure and AI-driven emergency response tools.
-          </p>
+          
         </div>
       </div>
     </div>

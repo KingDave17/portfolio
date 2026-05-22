@@ -7,10 +7,9 @@ const Hero = () => {
         <div className="hero-grid">
           <div>
             <h1 className="hero-heading">Hi, I'm <span style={{ color: '#38bdf8' }}>David.</span></h1>
-            <p className="hero-sub">Software Developer.</p>
+            <p className="hero-sub">Web Developer.</p>
             <p className="hero-desc">
-              Final year student graduating this July. Passionate about building clean, scalable
-              full-stack web and mobile applications.
+              Final year Software Engineering student specializing in frontend development, and leverage my engineering background to build robust, accessible and responsive real-world frontend web applications.
             </p>
             <div className="hero-cta">
               <a href="#projects" className="btn-primary">View My Work</a>

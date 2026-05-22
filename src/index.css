@@ -223,6 +223,9 @@ img { display: block; max-width: 100%; }
 }
 .project-img-wrap img {
   width: 90%;
+  height: 95%; /* Using 95% to leave a tiny gap at the bottom or fit the design nicely */
+  object-fit: cover;
+  object-position: top;
   border-radius: 8px 8px 0 0;
   box-shadow: 0 -8px 30px rgba(0,0,0,0.5);
   transform: translateY(8px);
