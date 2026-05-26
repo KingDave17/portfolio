@@ -33,6 +33,15 @@ const projects = [
     description: 'Full-stack hotel management prototype with custom modular auth, Jasmine unit testing, and payment portal logic.',
     image: '/hotel.png',
     demo: 'https://warm-bliss-hotel-react.vercel.app/',
+  },
+  {
+    id: 4,
+    title: 'CHRONOS Temporal Booking',
+    tag: 'E-COMMERCE / UX',
+    type: 'web',
+    description: 'A premium, fully-accessible luxury time travel booking agency. Features dynamic filtering, custom glassmorphism cart state management, and robust ARIA integrations.',
+    image: '/chronos.png',
+    demo: 'https://chronos-sage.vercel.app/',
   }
 ];
 
