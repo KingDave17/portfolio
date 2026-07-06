@@ -21,7 +21,7 @@ const About = () => (
         transition={{ duration: 0.7, ease: "easeOut" }}
       >
         <p>
-          I am a Frontend Engineer deeply focused on building scalable, resilient applications. With a strong foundation in Software Engineering, I understand how robust systems are architected under the hood, and I channel that exact mindset directly into the frontend.
+          My focus is on building scalable, resilient applications. With a strong foundation in Software Engineering, I understand how robust systems are architected under the hood, and I channel that exact mindset directly into the frontend.
           <br /><br />
           I have a simple philosophy: getting code to work on localhost is only half the job. True engineering comes from knowing why it works, how it performs under load, and how to track down the invisible bottlenecks that cause things to break.
           <br /><br />
